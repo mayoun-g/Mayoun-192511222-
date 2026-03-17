@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+    char str[100],old,new;
+    int i;
+
+    printf("Enter string: ");
+    scanf("%s",str);
+
+    printf("Enter old char: ");
+    scanf(" %c",&old);
+
+    printf("Enter new char: ");
+    scanf(" %c",&new);
+
+    for(i=0;str[i]!='\0';i++){
+        if(str[i]==old)
+            str[i]=new;
+    }
+
+    printf("Result: %s",str);
+}

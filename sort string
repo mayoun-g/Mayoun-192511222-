@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+    char str[100],t;
+    int i,j;
+
+    printf("Enter string: ");
+    scanf("%s",str);
+
+    for(i=0;str[i]!='\0';i++){
+        for(j=i+1;str[j]!='\0';j++){
+            if(str[i]>str[j]){
+                t=str[i];
+                str[i]=str[j];
+                str[j]=t;
+            }
+        }
+    }
+
+    printf("Sorted string: %s",str);
+}

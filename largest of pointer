@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a=15,b=25;
+    int *p=&a,*q=&b;
+
+    if(*p>*q)
+        printf("Largest=%d",*p);
+    else
+        printf("Largest=%d",*q);
+
+    return 0;
+}

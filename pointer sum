@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int a=10,b=20,sum;
+    int *p=&a,*q=&b;
+
+    sum=*p+*q;
+
+    printf("Sum=%d",sum);
+
+    return 0;
+}

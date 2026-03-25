@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a[5],i,*p,min;
+
+    p=a;
+
+    for(i=0;i<5;i++)
+        scanf("%d",p+i);
+
+    min=*p;
+
+    for(i=1;i<5;i++)
+    {
+        if(*(p+i)<min)
+            min=*(p+i);
+    }
+
+    printf("Smallest=%d",min);
+
+    return 0;
+}
